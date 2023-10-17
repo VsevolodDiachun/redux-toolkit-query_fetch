@@ -9,7 +9,6 @@ interface PostItemProps {
 }
 
 const PostItem: FC<PostItemProps> = ({post, remove, taskCount, update}) => {
-
     const handleRemove = (event: React.MouseEvent) => {
         event.stopPropagation()
         remove(post)

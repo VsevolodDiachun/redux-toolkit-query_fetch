@@ -6,29 +6,12 @@ import { handleCreate, handleRemove, handleUpdate } from './functions/fetchFunct
 import PostList from './posts/PostList';
 
 function PostContainer2() {
-
     const dispatch = useAppDispatch()
     const {isUsers, isLoading, isError} = useAppSelector(state => state.userReducer)
-
     
     useEffect(() => {
         dispatch(fetchUsers())
     }, [])
-
-    // const handleCreate = () => {
-    //     const title = prompt()
-    //     if (title) dispatch(addUser({title, body: title} as IUser))
-    // }
-
-    // const handleRemove = (remove: IUser) => {
-    //     const {id} = remove
-    //     dispatch(deleteUsers(id))
-    // }
-    
-    // const handleUpdate = (update: IUser) => {
-    //     dispatch(putUsers(update))
-    // }
-
 
   return (
     <div className="post__list">

@@ -9,7 +9,7 @@ interface RootObject {
 
 export const fetchUsers = createAsyncThunk<IPost[], undefined>(
     'user/fetchAll',
-    async (id, thunkAPI) => {
+    async (_, thunkAPI) => {
         try {
             const response = await axios.get<IPost[]>('  http://localhost:5004/posts')
             return response.data

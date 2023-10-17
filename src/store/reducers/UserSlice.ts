@@ -2,7 +2,6 @@ import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import { IPost } from "../../models/IPost";
 import {addUser, deleteUsers, fetchUsers} from "./ActionCreators";
 
-
 interface UserState {
     isUsers: IPost[];
     isLoading: boolean;

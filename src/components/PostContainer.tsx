@@ -11,24 +11,6 @@ const PostContainer = () => {
     const [updatePost, {}] = postAPI.useUpdatePostMutation()
     const [deletePost, {}] = postAPI.useDeletePostMutation()
 
-    // const handleCreate = () => {
-    //     const title = prompt()
-    //     if (title) createPost({title, body: title} as IPost)
-    // }
-
-    // const handleRemove = (post: IPost) => {
-    //     deletePost(post)
-    // }
-
-    // const handleUpdate = (post: IPost) => {
-    //     updatePost(post)
-    // }
-
-    //handleCreate(createPost)
-    // handleRemove()
-    // handleUpdate()
-
-
     return (
         <div className="post__list">
             <button 

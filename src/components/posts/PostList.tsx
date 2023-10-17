@@ -1,5 +1,3 @@
-
-
 import React, {FC}  from 'react'
 import { IPost } from '../../models/IPost'
 import PostItem from './PostItem'
@@ -14,9 +12,6 @@ interface PropsPost {
 
 
 const PostList: FC<PropsPost> = ({posts, isLoading, isError, handleRemove, handleUpdate}) => {
-
-  //console.log(posts?.length)
-
   return (
     <div>
         {isLoading && <h1>Loading...</h1>}
