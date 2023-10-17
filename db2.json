@@ -1,0 +1,38 @@
+{
+  "posts": [
+    {
+      "title": "json-server-2",
+      "body": "json-server-2",
+      "id": 4
+    },
+    {
+      "title": "json server3",
+      "body": "json server3",
+      "id": 7
+    },
+    {
+      "title": "dich",
+      "body": "dich",
+      "id": 14
+    },
+    {
+      "title": "press F",
+      "body": "press F",
+      "id": 15
+    },
+    {
+      "title": "seva",
+      "body": "seva",
+      "id": 16
+    },
+    {
+      "title": "STEPAAAAN",
+      "body": "STEPAAAAN",
+      "id": 17
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
