@@ -2,11 +2,6 @@ import axios from "axios";
 import {createAsyncThunk} from "@reduxjs/toolkit";
 import { IPost } from "../../models/IPost";
 
-interface RootObject {
-  id: number;
-  title: string | null;
-}
-
 export const fetchUsers = createAsyncThunk<IPost[], undefined>(
     'user/fetchAll',
     async (_, thunkAPI) => {
@@ -48,7 +43,7 @@ export const deleteUsers = createAsyncThunk<IPost[], IPost>(
     }
 )
 
-export const putUsers = createAsyncThunk<IPost[], RootObject>(
+export const putUsers = createAsyncThunk<IPost[], IPost>(
     'user/deletePost',
     async (data, thunkAPI) => {
         try {
