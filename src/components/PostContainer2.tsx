@@ -15,13 +15,13 @@ function PostContainer2() {
 
   return (
     <div className="post__list">
-            <button onClick={() => handleCreate(addUser, dispatch)} className='button-33'>Add new post</button>
+            <button onClick={() => dispatch(handleCreate(addUser))} className='button-33'>Add new post</button>
             <PostList 
                 posts={isUsers} 
                 isLoading={isLoading} 
                 isError={isError} 
-                handleRemove={(data) => handleRemove(deleteUsers, data, dispatch)} 
-                handleUpdate={(data) => handleUpdate(putUsers, data, dispatch)} 
+                handleRemove={(data) => dispatch(handleRemove(deleteUsers, data))} 
+                handleUpdate={(data) => dispatch(handleUpdate(putUsers, data))}
             />
         </div>
   )
